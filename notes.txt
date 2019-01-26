@@ -1,0 +1,93 @@
+https://rubyinstaller.org/downloads/
+https://www.youtube.com/watch?v=O5JSqXt4TlA
+
+
+installaton
+============
+ruby 2.3.3
+and 
+devkit 2.3
+
+first install ruby then devkit
+
+while installing ruby - check all options
+
+extract dev kit to 
+C:\DevKit
+
+check ruby installed 
+> ruby -v
+
+in devkit
+C:\DevKit
+
+run commands
+
+> ruby dk.rb init
+> ruby dk.rb install
+> gem install json --platform=ruby
+
+check if everything is installed - if you get 42 in return then its ok
+> ruby -rubygems -e "require 'json'; puts JSON.load('[42]').inspect"
+
+# [42]
+
+> gem install bundler
+
+> gem install rails --no-ri --no-rdoc
+
+
+create new rails app
+
+> rails new app-name
+
+> bundler install
+
+in app-name folder do this
+> rails s
+
+http://localhost:3000
+
+
+check gems
+> gem list
+
+check ruby installed 
+> ruby -v
+
+check bundler
+> bundler -v
+
+check rails
+> rails -v
+
+
+
+
+
+
+
+
+pgadmin / postgresSQL
+=====================
+pass: admin
+
+installation
+============
+to avoid error - follow
+https://www.youtube.com/watch?v=WD0w3ckznGQ
+
+Download Visual Studio 2017
+https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads
+https://aka.ms/vs/15/release/vc_redist.x64.exe
+
+and then 
+
+> cmd > run as administrator and paste following command
+bcdedit /set IncreaseUserVA 2800
+
+finally download postgres v 10.6
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+https://www.enterprisedb.com/thank-you-downloading-postgresql?anid=1256160
+
+
