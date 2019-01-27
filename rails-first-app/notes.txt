@@ -1,0 +1,74 @@
+create page / homepage
+
+> rails g controller home index
+
+Go to app > views > home > index.html.erb
+and
+app > controllers > home_controller.rb
+route created
+localhost:3000/home/index
+
+create root route
+> app > config > routes.rb
+
+comment get 'home/index' > # get 'home/index'
+and use 
+root 'home#index'
+and browse
+http://localhost:3000/
+
+
+install gems
+============
+rubygems.org
+
+app > Gemfile
+paste
+gem 'bootstrap', '~> 4.2', '>= 4.2.1'
+and
+gem 'jquery-rails'
+
+run command
+> bundle install
+> bundle update
+
+create new file in stylesheets
+app > assets > stylesheets > 
+bootstrap.css.scss
+and paste this in that 
+@import "bootstrap";
+
+
+app > assets > javascripts > application.js
+paste these 
+
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+
+and run 
+> bundle install
+> bundle update
+
+rename application.css to application.scss in > app assets > stylesheets > 
+
+main page of site
+
+app > views > layouts > application.html.erb
+
+
+
+partials
+==========
+in views folder
+_navbar.html.erb
+
+call it
+
+<%= render 'home/navbar' %>
+
+see routes
+==========
+> rake routes
+
+
